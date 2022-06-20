@@ -61,7 +61,6 @@
 
         .filter {
           width: 120px;
-          height: 48px;
           border: 1px solid #ff993c;
           color: #ff993c;
           text-align: center;
@@ -75,8 +74,7 @@
         }
 
         .export {
-          width: 150px;
-          height: 48px;
+          width: 180px;
           border: 1px solid #ff993c;
           color: #ff993c;
           text-align: center;
@@ -91,7 +89,7 @@
       margin-top: 15px;
 
       table {
-        font-family: arial, sans-serif;
+        font-size: 16px;
         border-collapse: collapse;
         width: 100%;
         height: auto;

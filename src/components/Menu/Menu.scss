@@ -20,7 +20,7 @@
       list-style-type: none;
       li {
         text-decoration: none;
-        width: 220px;
+        width: 252px;
         height: 56px;
 
         .sub-menu {
@@ -29,6 +29,8 @@
         }
 
         a {
+          transition: all 0.25s linear;
+
           text-decoration: none;
           color: #1e0d03;
           padding: 15px 0;
@@ -37,7 +39,7 @@
 
           font-family: 'Montserrat';
           font-style: normal;
-          font-weight: 700;
+          font-weight: 500;
           font-size: 18px;
           line-height: 26px;
 
@@ -48,9 +50,11 @@
         }
 
         .active {
-          background-color: #ffb800;
+          background: #ffb800;
           color: white;
           border-radius: 8px;
+
+          font-weight: 700;
         }
       }
     }

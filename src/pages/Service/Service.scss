@@ -14,8 +14,18 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 54px;
-    width: 320px;
+    width: 324px;
     height: 54px;
+
+    h1 {
+      margin-top: 0;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      color: #1e0d03;
+      line-height: 54px;
+    }
   }
 
   .body-content {
@@ -38,17 +48,19 @@
         flex-direction: row;
         align-items: center;
         padding: 10px 16px;
-        background: #ede6e6;
+        background: #f7f7f8;
         border-radius: 12px;
-        width: 446px;
-        height: 48px;
 
         input {
           border: none;
           outline: none;
           background: none;
-          width: 437px;
-          height: 30px;
+          font-family: 'Montserrat';
+          font-style: italic;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #1e0d03;
         }
       }
 
@@ -60,7 +72,7 @@
         margin-right: 24px;
 
         .add-ticket {
-          width: 150px;
+          width: 180px;
           height: 48px;
           border: 1px solid #ff993c;
           background-color: #ff993c;
@@ -87,7 +99,7 @@
       margin-top: 15px;
 
       table {
-        font-family: arial, sans-serif;
+        font-size: 16px;
         border-collapse: collapse;
         width: 100%;
         height: auto;
