@@ -24,7 +24,7 @@ const Home = () => {
         <div className="total">
           <span>Tổng doanh thu</span>
           <div className="turnover">
-            <span>550.000.000 </span>đồng
+            <span>525.145.000 </span>đồng
           </div>
         </div>
 

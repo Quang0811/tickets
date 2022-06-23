@@ -1,5 +1,6 @@
 import React from 'react';
 import './Navbar.scss';
+import avata from '../../assets/images/avata.png';
 
 const Navbar = () => {
   return (
