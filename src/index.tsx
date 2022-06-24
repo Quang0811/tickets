@@ -4,7 +4,7 @@ import './index.scss';
 import App from './App';
 import store from './store';
 import { Provider } from 'react-redux';
-import './styles/styles.scss';
+import './assets/styles/styles.scss';
 
 ReactDOM.render(
   <React.StrictMode>
