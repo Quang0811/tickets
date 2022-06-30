@@ -56,7 +56,6 @@ const UpdateTicket = (props: any) => {
 
   const handleChange = (value: any) => {
     setStatus(value);
-    console.log(`selected ${value}`);
   };
 
   const changeDisableA = (e: any) => {

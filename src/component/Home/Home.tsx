@@ -1,4 +1,15 @@
 import React from 'react';
+import {
+  Checkbox,
+  TimePicker,
+  DatePicker,
+  Select,
+  Modal,
+  Button,
+  Row,
+  Col,
+  Form,
+} from 'antd';
 import Calendar from '../../container/calendar/CalendarPicker';
 import CircleChart1 from '../../container/chart/CircleChart1';
 import CircleChart2 from '../../container/chart/CircleChart2';
@@ -14,7 +25,9 @@ const Home = () => {
       <div className="body-content">
         <div className="body-title">
           <span>Doanh thu</span>
-          <Calendar />
+          <Col span={5}>
+            <DatePicker format="DD/MM/YYYY" />
+          </Col>
         </div>
 
         <div className="body-line-chart">
@@ -29,7 +42,9 @@ const Home = () => {
         </div>
 
         <div className="body-circle-chart">
-          <Calendar />
+          <Col span={5}>
+            <DatePicker format="DD/MM/YYYY" />
+          </Col>
           <div className="circle1">
             <div>Gói gia đình</div>
             <CircleChart1 />

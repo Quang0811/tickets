@@ -3,13 +3,10 @@ import { Area } from '@ant-design/plots';
 
 const LineChart: FC = () => {
   const dataValue = [
-    { day: 'Thứ 2', value: 150000000 },
-    { day: 'Thứ 3', value: 350000000 },
-    { day: 'Thứ 4', value: 160000000 },
-    { day: 'Thứ 5', value: 250000000 },
-    { day: 'Thứ 6', value: 280000000 },
-    { day: 'Thứ 7', value: 180000000 },
-    { day: 'CN', value: 190000000 },
+    { day: '20/06', value: 150000000 },
+    { day: '23/06', value: 350000000 },
+    { day: '26/06', value: 160000000 },
+    { day: '29/06', value: 250000000 },
   ];
 
   const config = {

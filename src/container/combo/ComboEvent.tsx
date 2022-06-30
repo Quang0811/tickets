@@ -38,8 +38,6 @@ const ComboEvent = ({ ticketEventData, fetchTicketsEvent }: any) => {
 
   const content = (
     <div className="change-ticket">
-      <div>Sử dụng vé</div>
-      <div onClick={() => handleOpen()}>Đổi ngày sử dụng</div>
       {isOpenModal && isOpenModal === true ? (
         <ChangeDateUseEvent
           show={isOpenModal}
@@ -54,6 +52,7 @@ const ComboEvent = ({ ticketEventData, fetchTicketsEvent }: any) => {
 
   const handleGetDataTicket = (ticketDataEvent: any) => {
     setTicketDateDataEvent(ticketDataEvent);
+    setIsOpenModal(true);
   };
 
   useEffect(() => {
@@ -170,10 +169,7 @@ const ComboEvent = ({ ticketEventData, fetchTicketsEvent }: any) => {
                     trigger="click"
                     placement="left"
                     overlayInnerStyle={{
-                      background: '#ffd2a8',
-                      borderRadius: '8px',
-                      width: '159px',
-                      height: '59px',
+                      opacity: 0,
                     }}
                   >
                     <div onClick={() => handleGetDataTicket(item)}>
