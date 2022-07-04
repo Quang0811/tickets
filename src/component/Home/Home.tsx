@@ -10,11 +10,11 @@ import {
   Col,
   Form,
 } from 'antd';
-import Calendar from '../../container/calendar/CalendarPicker';
 import CircleChart1 from '../../container/chart/CircleChart1';
 import CircleChart2 from '../../container/chart/CircleChart2';
 import LineChart from '../../container/chart/LineChart';
 import './Home.scss';
+import CalendarPicker from '../../container/calendar/CalendarPicker';
 
 const Home = () => {
   return (
@@ -26,7 +26,8 @@ const Home = () => {
         <div className="body-title">
           <span>Doanh thu</span>
           <Col span={5}>
-            <DatePicker format="DD/MM/YYYY" />
+            {/* <DatePicker format="DD/MM/YYYY" /> */}
+            <CalendarPicker />
           </Col>
         </div>
 
@@ -43,7 +44,7 @@ const Home = () => {
 
         <div className="body-circle-chart">
           <Col span={5}>
-            <DatePicker format="DD/MM/YYYY" />
+            <CalendarPicker />
           </Col>
           <div className="circle1">
             <div>Gói gia đình</div>

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import './CheckingTicket.scss';
-import { Radio, Space, Table } from 'antd';
+import { DatePicker, Radio, Space, Table } from 'antd';
 import 'antd/dist/antd.css';
 import moment from 'moment';
 import db from '../../firebase/config';
 import { fetchTickets } from '../../store/actions/ticketFamilyActions';
-import DayPicker from '../../container/calendar/DayPicker';
+import CalendarPicker from '../../container/calendar/CalendarPicker';
 
 const CheckingTicket = ({ ticketData, fetchTickets }: any) => {
   const [data, setData] = useState([]);
@@ -159,11 +159,11 @@ const CheckingTicket = ({ ticketData, fetchTickets }: any) => {
         <div className="day-picker">
           <div className="current">
             <div className="day-title">Từ ngày</div>
-            <DayPicker />
+            <DatePicker format="DD/MM/YYYY" />
           </div>
           <div className="current">
             <div className="day-title">Đến ngày</div>
-            <DayPicker />
+            <DatePicker format="DD/MM/YYYY" />
           </div>
         </div>
       </div>

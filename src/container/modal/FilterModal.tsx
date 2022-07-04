@@ -3,7 +3,6 @@ import { Button, Modal } from 'react-bootstrap';
 import { Checkbox, Radio } from 'antd';
 import 'antd/dist/antd.css';
 import './FilterModal.scss';
-import DayPicker from '../calendar/DayPicker';
 import { DatePicker, Col } from 'antd';
 
 const FilterModal = (props: any) => {
